@@ -1,0 +1,42 @@
+/*DEFAULT STYLE SETTING*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+  box-sizing: border-box; /*to prevent horizental scrolling problem when a element have a width larger than the html element*/
+}
+body {
+  margin: 0;
+  min-height: 100vh; /*vh stand for View port Height and correspond to the full height of the device window So that means we always stretch our bacground to meet at least the device height even if the content is not enough to take up the full height of the screenscroll or scroll*/
+  /* background-color: aqua; to check default style setting */
+  font-family: Bebas Neue, sans-serif;
+  background: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #a53faa;
+}
+
+/*LOADER*/
+.loader {
+  position: fixed; /*it's not move when user scroll*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /*This line put the img correctly in the middle of the page because it translate the origin point at the center of image.*/
+}
