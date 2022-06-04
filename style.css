@@ -40,3 +40,22 @@ h1 {
     -50%
   ); /*This line put the img correctly in the middle of the page because it translate the origin point at the center of image.*/
 }
+
+/*Image container*/
+.image-container {
+  margin: 10px 20%;
+}
+.image-container img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*Media Query : Large Smartphone*/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
