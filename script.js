@@ -8,7 +8,7 @@ let photosArray = []; //we declare photosArray and initialize it with an empty a
 
 //Unsplash API
 let count = 5; //For performance We start by retrieving only 5 image from the API then we will request for 30 more.
-const apiKey = config.api_access_key; //We use an environment
+const apiKey = "OnIt--EYalZb_qMpU2uNPvgp9mQUAuYzvAm3SY1b770"; //We use an environment
 
 let apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
 
