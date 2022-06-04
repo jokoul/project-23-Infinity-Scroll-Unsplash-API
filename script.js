@@ -52,28 +52,34 @@ function displayPhotos() {
     //Create <img> for photo
     const img = document.createElement("img");
     img.setAttribute("src", photo.urls.regular);
-    if (photo.alt_description) {
-      //   img.setAttribute("alt", photo.alt_description);
-      setAttributes(img, {
-        src: photo.urls.regular,
-        alt: photo.alt_description,
-        title: photo.alt_description,
-      });
-    } else if (photo.location.title) {
-      //   img.setAttribute("alt", photo.location.title);
-      setAttributes(img, {
-        src: photo.urls.regular,
-        alt: photo.location.title,
-        title: photo.location.title,
-      });
-    } else {
-      //   img.setAttribute("alt", photo.user.name);
-      setAttributes(img, {
-        src: photo.urls.regular,
-        alt: photo.user.name,
-        title: photo.user.name,
-      });
-    }
+    setAttributes(img, {
+      src: photo.urls.regular,
+      alt: photo.alt_description,
+      title: photo.alt_description,
+    });
+
+    // if (photo.alt_description) {
+    //   //   img.setAttribute("alt", photo.alt_description);
+    //   setAttributes(img, {
+    //     src: photo.urls.regular,
+    //     alt: photo.alt_description,
+    //     title: photo.alt_description,
+    //   });
+    // } else if (photo.location.title) {
+    //   //   img.setAttribute("alt", photo.location.title);
+    //   setAttributes(img, {
+    //     src: photo.urls.regular,
+    //     alt: photo.location.title,
+    //     title: photo.location.title,
+    //   });
+    // } else {
+    //   //   img.setAttribute("alt", photo.user.name);
+    //   setAttributes(img, {
+    //     src: photo.urls.regular,
+    //     alt: photo.user.name,
+    //     title: photo.user.name,
+    //   });
+    // }
     // if (photo.alt_description) {
     //   img.setAttribute("title", photo.alt_description);
     // } else if (photo.location.title) {
