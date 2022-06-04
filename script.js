@@ -118,3 +118,28 @@ window.addEventListener("scroll", () => {
 
 //On Load
 getPhotos();
+
+//SCROLL TOP BTN
+mybutton = document.getElementById("myBtn");
+
+//When the user scrolls down 20px form the top document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 750 ||
+    document.documentElement.scrollTop > 750
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+//When the user clisk on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // for SAFARI
+  document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+}

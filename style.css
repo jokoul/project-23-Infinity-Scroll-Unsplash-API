@@ -60,7 +60,40 @@ h1 {
     font-size: 25px;
   }
   .image-container {
-    margin: 10px;
+    margin: 45px;
+  }
+}
+/*TOP BUTTON*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  width: 55px;
+  padding: 5px;
+  background-color: #a53faa;
+  color: white;
+  z-index: 99;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 19px;
+  transition: all 0.5s ease-in-out;
+}
+#myBtn:hover {
+  color: #a53faa;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid #a53faa;
+}
+@media screen and (max-width: 600px) {
+  #myBtn {
+    right: 3px;
+    width: 35px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 16px;
   }
 }
 
