@@ -1,15 +1,19 @@
 /*DEFAULT STYLE SETTING*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
-  box-sizing: border-box; /*to prevent horizental scrolling problem when a element have a width larger than the html element*/
+  box-sizing: border-box;
 }
 body {
-  margin: 0;
   min-height: 100vh; /*vh stand for View port Height and correspond to the full height of the device window So that means we always stretch our bacground to meet at least the device height even if the content is not enough to take up the full height of the screenscroll or scroll*/
   /* background-color: aqua; to check default style setting */
   font-family: Bebas Neue, sans-serif;
   background: whitesmoke;
+  box-sizing: border-box; /*to prevent horizental scrolling problem when a element have a width larger than the html element*/
+  position: relative;
 }
 
 h1 {
@@ -57,5 +61,70 @@ h1 {
   }
   .image-container {
     margin: 10px;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#a53faa, #a53faa);
+  background: -webkit-linear-gradient(#a53faa, #a53faa);
+  background: -moz-linear-gradient(#a53faa, #a53faa);
+  background: -o-linear-gradient(#a53faa, #a53faa);
+  /* border-radius: 10px; */
+  padding: 1rem;
+  margin-top: 3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100%; generate horizontal scroll*/
+}
+.footer p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+footer div {
+  margin-left: 2rem;
+}
+.footer p a {
+  text-decoration: none;
+  color: #f3d337;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #5d12e7 !important;
+  margin-bottom: 1rem;
+}
+.footer ul li a {
+  color: white;
+}
+.footer ul li {
+  transition: all 0.2s;
+  list-style-type: none;
+}
+.footer ul li:hover {
+  transform: scale(1.3);
+}
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  footer div {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
