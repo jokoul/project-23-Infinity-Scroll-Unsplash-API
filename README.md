@@ -2,7 +2,9 @@
 
 ## Description
 
-A showcase website which implements infinity scroll feature and it consumes image data from Unsplash API to populate image container dynamically in the DOM.
+A showcase website which implements infinity scroll feature and it consumes image data from Unsplash API to populate image container dynamically in the DOM. When user scroll down and
+almost reach the bottom, new content is automatically loaded
+which result to an infinity scroll effect. To achieve this project, I manipulate DOM element's properties like document.body.offsetHeight, document.body.scrollTop and window object's properties like window.innerHeight, window.scrollY.
 
 ## Stack
 
